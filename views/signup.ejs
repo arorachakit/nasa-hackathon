@@ -1,0 +1,38 @@
+<% include partials/header %> 
+
+    <section class="container-fluid bg">
+            <section class="row justify-content-center" >
+                <section class="col-12 col-sm-6 col-md-3">
+                    <form class="form-container" action = '/signup' method="POST"> 
+        
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="sexampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@gmail.com" name="email">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputPassword1">Username</label>
+            <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Robin123" name="username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Glshaoh67" name="password">
+          </div>
+           <div class="form-group">
+            <label for="exampleInputPassword1">Unique ID number</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******" name="uniqueId">
+          </div>
+        
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Unique ID Scan</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+        
+        
+                </section>
+            </section>
+        </section>
+    <% include partials/foooter %>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIDERS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/home.css">
+    
+</head>
+<body>
+    <!-- navbar component -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+          <!-- Brand Logo -->
+        <a class="navbar-brand" href="/"> <img src="images/logo.png"> </a>
+        <!-- Collapse Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Items to be Collapsed -->
+        
+        <div class="collapse navbar-collapse mr-2" id="navbarSupportedContent">
+            <div class="container">
+                        <!-- ul for the left side -->
+                <ul class="navbar-nav justify-content-lg-between">   
+                
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs">Blogs</a>
+                    </li>
+                
+                    <!-- li for dropdown three -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Disasters
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/cyclone/">Cyclone</a>
+                            <a class="dropdown-item" href="/flood">Flood</a>
+                            <a class="dropdown-item" href="/earthquake">EarthQuake</a>
+                            <a class="dropdown-item" href="/landslide">LandSlide</a>
+                            <a class="dropdown-item" href="/volcano">Volcano Eruption</a>
+                        </div>
+                        
+                    </li>
+                    <% if(!currentUser){ %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                    <%} else {%>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Signed in as <%= currentUser.username %></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Logout</a>
+                                </li>
+						<%}%>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/help">Need Help</a>
+                    </li>
+                    
+                 </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- Header upto this point -->

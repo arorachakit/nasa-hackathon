@@ -1,0 +1,57 @@
+<% include partials/header %> 
+<iframe width="1920" height="850" src="https://www.youtube.com/embed/8zXyxubBdos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container ">
+    <div class="d-flex">
+            <div class="row">
+                    
+                    <% news.forEach(function(news){ %>
+                        
+                            <div class="col-xs-3 mx-4 px-3 py-2">
+                                    <div class="card" style="width: 18rem;">
+                                            <img src="<%= news.image %>" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title"><%= news.name %></h5>
+                                              <p class="card-text"><%=news.description.substring(0, 100) %>...</p>
+                                              <a href="/recent" class="btn btn-primary">Read More</a>
+                                            </div>
+                                          </div>
+                            </div>
+                        
+                       
+                    <%  }) %>
+
+                </div>
+    </div>
+        <hr>
+        <% if(currentUser){ %>
+            <div class="my-2 mx-5">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <h1 class="display-5">Post a <a href="/blog">Blog</a></h1>
+                    </div>
+                    <div>
+                            <h1 class="display-5"><a href="/feedback">Submit a FeedBack</a></h1>
+                        </div>
+                    </div>
+            </div>
+            <div id="todo">
+                    <div id="container">
+                    
+                            <h1>TO-DO LIST<i class="fa fa-plus"></i></h1>
+                            <input type="text" placeholder="Add New Todo">
+                            <ul id="mylist">
+                                <li> <span><i class="fa fa-trash"></i></span> Water</li>
+                                <li> <span><i class="fa fa-trash"></i></span> Passport</li>
+                                <li> <span><i class="fa fa-trash"></i></span> Medicines</li>
+                            </ul>
+                        </div>
+            </div>
+        <%}%>
+    </div>
+   
+
+
+   
+  
+  
+<% include partials/footer %> 

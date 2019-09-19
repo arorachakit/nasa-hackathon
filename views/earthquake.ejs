@@ -1,0 +1,116 @@
+<% include partials/header %>
+<div class="container " id="about">
+        <div class="my-3 pt-3 my-md-4 pt-md-4">
+             <h1 class="display-4"> Earthquake</h1>
+             <div class="row">
+                 <div class="col-md-8">
+                     <p class="lead">
+                         An earthquake is what happens when two blocks of the earth suddenly slip past one another. The surface where they slip is called the fault or fault plane. The location below the earth’s surface where the earthquake starts is called the hypocenter, and the location directly above it on the surface of the earth is called the epicenter. Sometimes an earthquake has foreshocks. These are smaller earthquakes that happen in the same place as the larger earthquake that follows. 
+                         
+                     </p>
+                 </div>
+                 <div class="col-md-4">
+                     <img class="img-fluid" src="http://www.coolgeography.co.uk/GCSE/AQA/Restless%20Earth/Earthquakes/EarthquakeBlockDiagram14.jpg">
+                 </div>
+                 <div class="col-4">
+                        <iframe width="320" height="250" src ="https://www.youtube.com/embed/e7ho6z32yyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+ 
+                     
+                 </div>
+ 
+                  <div class="col-md-8">
+                     <p class="lead">
+                        Scientists can’t tell that an earthquake is a foreshock until the larger earthquake happens. The largest, main earthquake is called the mainshock. Mainshocks always have aftershocks that follow. These are smaller earthquakes that occur afterwards in the same place as the mainshock. Depending on the size of the mainshock, aftershocks can continue for weeks, months, and even years after the mainshock! 
+ 
+                     </p>
+                 </div>
+ 
+                
+                 <hr>
+ </div>
+ 
+                  
+                
+ <div class="jumbotron mt-5">
+                  <div class="row" >
+                 <div class="col-md-8">
+                     <h1>Precautions</h1>
+                     <p class="lead">
+                        <ul>•    Know your risk.  Find out if you live near an active fault line and whether or not the ground around you is more susceptible to the effects of an earthquake.</ul>
+ <ul>•   Make sure your water heater, gas appliances, and other fixtures are fastened securely using safety cables or straps and lock the rollers of all appliances and furniture.</ul>
+ <ul>•   Check that bookcases, filing cabinets and furniture are secure and fastened to walls.</ul>
+ <ul>•   Secure ceiling lights, suspended ceilings and other hanging items to the building structure.</ul>
+ <ul>•   Fit all gas appliances with flexible connections and breakaway gas shut-off devices or install a main gas shut-off device.</ul>
+ <ul>•   Brace unreinforced chimneys, masonry, concrete walls and foundations.</ul>
+ <ul>•   Add anchor bolts or steel plates between your home’s structure and foundation.</ul>
+ 
+                     </p>
+                 </div>
+                 <div class="col-md-4">
+                     <img class="img-fluid" src="http://media.emergencymgmt.com/images/770*1000/quake+(2)2.jpg">
+       </div>       
+    
+  </div>
+ </div>
+ 
+  
+    <iframe width="1110" height="400" src="https://www.youtube.com/embed/1RvGH8xShDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+ 
+ 
+   <div class="jumbotron mt-5">
+                  <div class="row" >
+                 <div class="col-md-8">
+                     <p class="lead">
+                         <h1>Safety Checklist kit</h1>
+                         <li>Drugs/Medications
+                        <ul>•Hydrogen peroxide to wash and disinfect wounds</ul>
+                                               <ul>• Antibiotic ointment</ul>
+ 
+                        <ul>• Aspirin and non-aspirin tablets</ul>
+ 
+ 
+ 
+                         </li>
+                         <li>Dressing
+                       <ul>• Bandage strips</ul>
+                                               <ul>• Ace bandages</ul>
+ 
+                        <ul>• Rolled gauze</ul>
+ 
+                         </li>
+                         <li>Other First Aid Supplies
+                           <ul>• Pocket knife</ul>
+                             <ul>• Sanitary napkins</ul>
+                             <ul>• Instant cold packs for sprains</ul>
+                         </li>
+                         <li>Tools and supplies</li>
+                         <ul>• screwdriver, pliers, hammer, adjustable wrench</ul>
+                         <ul>• plastic sheeting and tape</ul>
+                         <ul>• rope for towing or rescue</ul>
+                         <li>Items for safety and comfort</li>
+                         <ul>• waterproof matches</ul>
+                         <ul>• candles</ul>                    
+                         <ul>• fire extinguisher — multipurpose, dry chemical type</ul>
+                         <ul>• blankets or sleeping bags</ul>
+                     </p>
+                 </div>
+                 
+    
+  </div>
+  <% if(currentUser){ %>
+    <div id="todo">
+            <div id="container">
+            
+                    <h1>TO-DO LIST<i class="fa fa-plus"></i></h1>
+                    <input type="text" placeholder="Add New Todo">
+                    <ul>
+                        <li> <span><i class="fa fa-trash"></i></span> Udemy</li>
+                        <li> <span><i class="fa fa-trash"></i></span> Angular</li>
+                        <li> <span><i class="fa fa-trash"></i></span> Hologram</li>
+                    </ul>
+                </div>
+    </div>
+<%}%>
+</div>
+  <% include partials/footer %>

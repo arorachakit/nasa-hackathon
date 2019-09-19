@@ -1,0 +1,94 @@
+<% include partials/header %>
+<div class="container " id="about">
+        <div class="my-3 pt-3 my-md-4 pt-md-4">
+             <h1 class="display-4"> Volcanic Eruption</h1>
+             <div class="row">
+                 <div class="col-md-8">
+                     <p class="lead">
+                         Deep within the Earth it is so hot that some rocks slowly melt and become a thick flowing substance called magma. Since it is lighter than the solid rock around it, magma rises and collects in magma chambers. Eventually, some of the magma pushes through vents and fissures to the Earth's surface. Magma that has erupted is called lava.
+                         
+                     </p>
+                 </div>
+                 <div class="col-md-4">
+                     <img class="img-fluid" src="https://s.abcnews.com/images/US/hawaii-volcano-03-as-rt-180608_hpEmbed_1_3x2_992.jpg">
+                 </div>
+                 <div class="col-4">
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/1FEvv8hgkO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+                     
+                 </div>
+ 
+                  <div class="col-md-8">
+                     <p class="lead">
+                        Explosive volcanic eruptions can be dangerous and deadly. They can blast out clouds of hot tephra from the side or top of a volcano. These fiery clouds race down mountainsides destroying almost everything in their path. Ash erupted into the sky falls back to Earth like powdery snow. If thick enough, blankets of ash can suffocate plants, animals, and humans. When hot volcanic materials mix with water from streams or melted snow and ice, mudflows form. Mudflows have buried entire communities located near erupting volcanoes.
+                     </p>
+                 </div>
+ 
+                
+                 <hr>
+ </div>
+ 
+                  
+                
+ <div class="jumbotron mt-5">
+                  <div class="row" >
+                 <div class="col-md-8">
+                     <h1>Precautions</h1>
+                     <p class="lead">
+                        <ul>• As much as possible, stay away from active volcanoes.</ul>
+ <ul>• If you live near an active volcano, keep goggles and a mask in an emergency kit, along with a flashlight and a working, battery-operated radio.</ul>
+ <ul>• Know your evacuation route. Keep gas in your car.</ul>
+ <ul>• Evacuate only as recommended by authorities to stay clear of lava, mud flows, and flying rocks and debris.</ul>
+ <ul>• Avoid river areas and low-lying regions.</ul>
+ <ul>• Before you leave the house, change into long-sleeved shirts and long pants and use goggles or eyeglasses, not contacts. Wear an emergency mask or hold a damp cloth over your face.</ul>
+ <ul>• Ash can damage engines and metal parts, so avoid driving. If you must drive, stay below 35 miles (56 kilometers) an hour.</ul>
+ 
+                     </p>
+                 </div>
+                 <div class="col-md-4">
+                     <img class="img-fluid" src="https://www.dnr.wa.gov/pictures/ger/ger_hazards_volc_lahar_graphic.png?7hvkw">
+       </div>       
+    
+  </div>
+ </div>
+ 
+  
+    <iframe width="1110" height="400" src="https://www.youtube.com/embed/bvAsjUoTYic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+ 
+ 
+   <div class="jumbotron mt-5">
+                  <div class="row" >
+                 <div class="col-md-8">
+                     <p class="lead">
+                         <h1>Safety Checklist kit</h1>
+                         <ul>• Flashlight and extra batteries</ul>
+                         <ul>• First aid kit and manual</ul>
+                         <ul>• Emergency food and water</ul>
+                         <ul>• Manual (nonelectric) can opener</ul>
+                         <ul>• Essential medicines</ul>
+                         <ul>• Sturdy shoes</ul>
+                         <ul>• Respiratory (breathing) protection</ul>
+                         <ul>• Eye protection (goggles)</ul>
+                         <ul>• Battery-powered radio</ul>
+                     </p>
+                 </div>
+                 
+    
+  </div>
+  <% if(currentUser){ %>
+    <div id="todo">
+            <div id="container">
+            
+                    <h1>TO-DO LIST<i class="fa fa-plus"></i></h1>
+                    <input type="text" placeholder="Add New Todo">
+                    <ul>
+                        <li> <span><i class="fa fa-trash"></i></span> Udemy</li>
+                        <li> <span><i class="fa fa-trash"></i></span> Angular</li>
+                        <li> <span><i class="fa fa-trash"></i></span> Hologram</li>
+                    </ul>
+                </div>
+    </div>
+<%}%>
+</div>
+  <% include partials/footer %> 

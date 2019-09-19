@@ -1,0 +1,20 @@
+<!-- feedback form -->
+<% include partials/header %> 
+<div class="container">
+        <div id="feedback-form">
+        <div class="feedback-title">
+          <h1 style="text-align: center;">Feedback</h1>
+          <h2 style="text-align: center;">Your response is important!</h2>
+          </div>
+        
+        
+         <div class="feedback-form">
+          <form id="feedback-form" method="POST" action="/feedback">
+           
+           
+         <textarea name="message" class="form-control" placeholder="Message"  rows="15" cols="20" required=""></textarea><br>
+           
+            <button type="button" class="btn btn-success">Success</button>
+        
+        </form>
+        <% include partials/footer %> 
