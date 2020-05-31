@@ -10,7 +10,7 @@ const express = require('express'),
          flash = require('connect-flash'),
          LocalStrategy = require('passport-local');
 
- mongoose.connect('mongodb://localhost:27017/project', {useNewUrlParser: true});
+//  mongoose.connect('mongodb://localhost:27017/project', {useNewUrlParser: true});
 
 
 app.use(express.static(__dirname + '/public'));
